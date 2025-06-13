@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App.jsx";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { SettingsProvider } from "./Context/Settings.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
+import { SettingsProvider } from "./context/SettingContext.jsx";
 
 const queryClient = new QueryClient();
 

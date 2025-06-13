@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Loader, User, LogOut } from 'lucide-react';
-import { useSettings } from '../Context/Settings';
 import { useAuth } from '../context/AuthContext';
 import { SAVED_CITIES_KEY } from '../constants';
 import SearchInput from './components/SearchInput';
@@ -8,6 +7,7 @@ import { ForecastWeather } from './components/ForecastWeather';
 import CurrentWeather from './components/CurrentWeather';
 import { useCurrentWeather } from '../Hooks/ClientQueries';
 import { getImageByDayType } from '../utils/utils';
+import { useSettings } from '../context/SettingContext';
 
 const WeatherDashboard = () => {
   const [currentCity, setCurrentCity] = useState(localStorage.getItem(SAVED_CITIES_KEY) || 'London');

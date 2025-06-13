@@ -1,11 +1,11 @@
 /* React query hooks — just wrappers around the API helpers */
 import { useQuery } from '@tanstack/react-query';
-import { useSettings } from '../Context/Settings';
 import {
   getCurrentWeather,
   getForecast,
   searchCities,
 } from '../api/Weather';
+import { useSettings } from '../context/SettingContext';
 
 export const useCurrentWeather = (city) => {
   const { units } = useSettings();

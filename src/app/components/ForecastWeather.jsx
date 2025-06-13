@@ -1,7 +1,7 @@
 import { Calendar, Loader } from "lucide-react";
-import { useSettings } from "../../Context/Settings";
 import { useForecastWeather } from "../../Hooks/ClientQueries";
 import { WeatherIcon } from "./WeatherIcon";
+import { useSettings } from "../../context/SettingContext";
 
 export const ForecastWeather = ({ city }) => {
   const { units } = useSettings();

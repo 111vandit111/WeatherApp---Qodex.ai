@@ -1,6 +1,6 @@
 import { AlertCircle, ArrowDown, ArrowUp, Droplets, Eye, Loader, Sunrise, Sunset, Thermometer, Wind } from 'lucide-react';
 import React from 'react'
-import { useSettings } from '../../Context/Settings';
+import { useSettings } from '../../context/SettingContext';
 import { useCurrentWeather } from '../../Hooks/ClientQueries';
 import { WeatherIcon } from './WeatherIcon';
 import { ERROR_MESSAGES_TO_ICONS } from '../../constants';
