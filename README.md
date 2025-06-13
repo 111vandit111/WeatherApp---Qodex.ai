@@ -61,7 +61,9 @@ Visit **http://localhost:5173** to see the app.
 .
 ├── api/
 │   └── Supabase.js         # Supabase client setup
+│   └── Weather.js          # Weather client setup
 ├── app/
+│   └── Components          # All components for this app
 │   └── WeatherApp.jsx      # Main weather interface
 ├── auth/
 │   └── AuthContext.jsx     # Global auth provider
