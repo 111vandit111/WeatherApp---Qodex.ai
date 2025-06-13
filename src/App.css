@@ -417,6 +417,10 @@ body, html{
     align-items: center;
     padding-top: 2rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
+    @media screen and (max-width: 648px) {
+        justify-content: center;
+    }
 }
 
 .branding .app-title {
